@@ -1,0 +1,111 @@
+<!Doctype html> <!--관용적으로.. 이 문서는 html이다. 라는 뜻에서 작성-->
+<html>
+<head> <!--body를 설명하는 부분에 해당하는 것은 head태그에 포함된다-->
+  <title>WEB1-HTML</title>  <!--title은 책 표지와 같은 정보다-->
+  <meta charset="utf-8"> <!--문자 인코딩 방식! utf-8로 html파일을 작성했으니 웹브라우저에 열때도 utf-8로 열수 있도록!-->
+<!--charset에서 char는 문자 character이고, set은 규칙. 즉, 문자규칙을 이르는 명령어-->
+
+</head>
+
+<body> <!--본문에 해당하는 부분은 body태그에 포함된다-->
+
+  <h1 align="center">html태그에 관한 설명</h1>
+        <hr width="100%" align="left"> <!--이건 수평선 hr태그-->
+
+자 이제부터 <strong><u>sogeodev</u>의 html 태그 공부</strong>에 대한 소스를 만들겁니다. <br>
+
+  <strong>굵은 글씨</strong><!--<strong>--><br>
+    <u>글씨에 밑줄</u><!--<u> underline의 첫글자--><br><br><br>
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+      <h3>This is heading 3</h3>
+      <h4>This is heading 4</h4>
+      <h5>This is heading 5</h5>
+      <h6>This is heading 6</h6>
+      <!--h태그=heading을 쓰면 일반적인 글씨체보다 두껍고 '줄바꿈'이 되는 것을 알 수 있다. h태그는 제목을 가리키는 것이니까. -->
+      <br><br><br>
+
+
+      메인글자<sub>아래첨자</sub> <!--아래첨자--><br><br>
+      메인글자<sup>위첨자</sup> <!--위첨자--><br>
+
+      <marquee>흐르는 강물처럼~</marquee> <br><br><!--이건 흐르는 글자-->
+
+          <hr width="70%" align="left"> <!--이건 수평선 hr태그-->
+
+          <h2>WEB1-9.줄바꿈 :  br태그 vs p태그 </h2>
+내용이 너무 길어지면 답답하니까 우리는 글의 단락을 나눠야할 필요성이 있다. <br>
+br태그는 그저 시각적으로 줄띄우기만을 의미하기에 다른 태그들처럼 /로 닫을 필요가 없다. <br>
+하지만 단락을 만들때 쓰라는 의미로 p태그(paragraph)가 따로 있다.<br>
+어떤 맥락에서 더 좋은 태그냐 하면 p태그가 더 좋다. 왜냐하면 p태그는 웹페이지를 좀더 정보로써 가치있게 만들기 때문이다.
+저만큼이 단락이라는 것을 의미적으로 표현하는 것. br은 그저 줄바꿈에 지나지 않는다. <br>
+단, br태그는 줄바꿈을 많이 하고싶다면 br을 여러번하면 되지만 p태그는 여백이 한정되어있다. 이를 조정하기 위해서 css를 활용한다.
+css에서 태그와 태그사이에 여백을 나타내는 코드가 있다.
+
+
+  <p style="margin-top:40px;">위의 여백은 p style="margin-top:40px;"을 사용</p>
+  <br><br>
+  <h2>WEB1-11.홈페이지에 사진넣기!</h2>
+  <!--unsplash.com에서 저작권에 구애받지 않고 고퀄리티 이미지를 사용 가능.-->
+  <img src="coding.jpg" width="100%">
+  <!--이때 img의 속성인 src나 width의 순서는 상관없다--><br><br>
+
+이때, src="인터넷에 있는 이미지의 주소"를 사용하는 것도 가능하다.
+가령 src="coding.jpg"대신에 src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60
+
+"를 사용할 수 있다는 것.(다른 이미지)<br>
+
+  <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60" width="100%">
+
+
+
+  <p style="margin-top:40px;">
+    <h2>WEB1-12. 부모자식과 목록이라구? </h2>
+  자 li태그를 한번 사용해보자
+      <li>1.HTML </li>
+      <li>2.CSS </li>
+      <li>3.Javascript</li> <br>
+      <li>한국</li>
+      <li>일본</li>
+      <li>중국</li><br>
+이와 다르게, 어디까지가 서로 연관된 항목인지 경계를 짓기 위해 li의 부모개념인 ol(Ordered list)과 ul(Unordered list) 태그가 있다.<br>
+따라서 부모태그인 ul과 ol은 반드시 자식태그인 li를 가지고, <br>
+자식 태그인 li는 부모태그인 ul과 ol을 반드시 가진다.<br><br>
+
+
+다음은 ul태그의 사용.
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+      </ul>
+
+다음은 ol태그의 사용.
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+      </ol>
+    </p>
+
+    <p style="margin-top:40px;">
+      <h2>WEB1-14. HTML 태그의 제왕 </h2>
+자. 여기에서는 a태그에 관해 알아보자. a태그는 anchor의 약자로서 .. 배가 정박할 때 사용하는 닻을 의미한다. <br>
+정보의 바다에 정박한다는 의미의 시적인 표현인 a태그..! 이는 '링크'를 의미한다. 링크는 본드 또는 실과같은 존재.<br>
+페이지가 모이면 책이 되듯이, 웹페이지를 링크로 모으면 일종이 책이 만들어진다. <br><br>
+
+다음은 링크이다!<br>
+<a href="https://www.w3.org/TR/html5/">html을 만든 W3C라는 국제기구에서 만든 HTML 공식설명서 바로가기 </a>
+<!--여기서 href는 Hypertext REFerence의 약자이다. 링크야 이걸 참고해~ 라는 것.-->
+<br><br>
+
+이때 클릭했을 때, 새로운 탭이 열리게 하고싶다면?<br>
+<a href="https://www.w3.org/TR/html5/" target="_blank">html을 만든 W3C라는 국제기구에서 만든 HTML 공식설명서 바로가기 </a>
+<br><br>
+또, 사용자에게 링크를 클릭하기 전에 이것이 무엇인지 알려주고싶다면?<br>
+사용자가 커서를 링크에 올렸을때 링크를 설명하는 작은 창이 뜬다.<br>
+<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5에 대한 설명서">html을 만든 W3C라는 국제기구에서 만든 HTML 공식설명서 바로가기 </a>
+
+  </p>
+  </body>
+</html>
